@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM, { render } from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,16 +9,24 @@ import StateFullComponent from './container/StateFullComponent';
 import List from './component/List';
 import Test from './component/Test';
 import Login from './login/Login';
+import BlogPost from "./container/BlogPost/BlogPost";
+import Mahasiswa from "./container/Mahasiswa/Mahasiswa";
+
+// Pertemuan 4
+// ReactDOM.render(<BlogPost/>, document.getElementById('content'));
+
+//Tugas 4
+ReactDOM.render(<Mahasiswa/>, document.getElementById('content'));
 
 // Default
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+// ReactDOM.render(<App/>, document.getElementById('root'));
 
 // Pertemuan 2
 // const Hello = () =>{
