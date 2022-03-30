@@ -1,21 +1,29 @@
-import React from "react";
+import React from 'react'
 
 const Post = (props) => {
     return (
-        <div className="mahasiswa">
-            <div className="gambar-mahasiswa">
-                <img src="http://placeimg.com/80/80/tech" alt="Gambar Tumbnail" />
+        <div className="artikel">
+            <div className="gambar-artikel">
+                <img src="http://placeimg.com/80/80/tech" alt="Gambar Thumbnail Artikel" />
             </div>
             <div className="konten-artikel">
-                <div className="nim-mahasiswa">{props.nim}</div>
-                <p className="isi-mahasiswa">{props.nama}</p>
-                <p className="isi-mahasiswa">{props.alamat}</p>
-                <p className="isi-mahasiswa">{props.hp}</p>
-                <p className="isi-mahasiswa">{props.angkatan}</p>
-                <p className="isi-mahasiswa">{props.status}</p>
-                <button className="btn btn-sm btn-warning" onClick={() => props.hapusMahasiswa(props.nimMahasiswa)}>Hapus</button>
+                <div className="row">
+                    <div className="col-sm">
+                        <div className="judul-artikel">Nama : {props.namaMhs}</div>
+                        <p className="isi-artikel">NIM : {props.nimMhs}</p>
+                        <p className="isi-artikel">Alamat : {props.alamatMhs}</p>
+                        <p className="isi-artikel">No Hp : {props.noHp}</p>
+                        <p className="isi-artikel">Angkatan : {props.angkatanMhs}</p>
+                        <p className="isi-artikel">Status : {props.statusMhs}</p>
+                        <button className="btn btn-sm btn-danger" onClick={() => props.hapusMahasiswa(props.idMahasiswa)}>Hapus</button>
+                    </div>
+                    <div className="col-sm">
+
+                    </div>
+                </div>
             </div>
         </div>
     )
 }
-export default Post;
+
+export default Post
